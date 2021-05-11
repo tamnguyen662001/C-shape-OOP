@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- <link rel="stylesheet" href="./owl.carousel.min.css"> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+
+
+    <link rel="stylesheet" href="https://cdn.boomcdn.com/libs/owl-carousel/2.3.4/assets/owl.carousel.css">
+
+    <link rel="icon" href="./Image/img/favicon.png">
+    <link rel="stylesheet" href="./main.css">
+
+
+    <title>Project 4 | Boostrap</title>
+</head>
+
+<body data-spy="scroll" data-target="#main" data-offset="70" onload="realtimeClock()">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+            <a href="#home" class="navbar-brand mx-3"><img src="./Image/img/logo1.png" alt="" id="logo"> </a>
+
+            <button class="navbar-toggler" data-target="#main" data-toggle="collapse" type="button">
+                <span class="navbar-toggler-icon"></span>
+                <!-- <i class="fas fa-bars"></i> -->
+            </button>
+            <div id="main" class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+
+                    <li class="nav-item">
+                        <a href="#features" class="nav-link">features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#method" class="nav-link">CFOP method</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#algorithms" class="nav-link">Algorithms</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#download" class="nav-link">contact </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link ">home</a>
+                    </li>
+                </ul>
+            </div>
+        
+    </nav>
+    <!-- End Navbar -->
+
+
+
+    <!-- Home section -->
+    <div class="home d-flex align-items-center" id="home">
+        <div class="container-fluid">
+            <div class="row my-5 mx-3">
+                <div class="col-md-7 mb-4">
+                    <div class="home-text mt-3">
+                        <h2>App Cube Station</h2>
+                        <p>The GAN356 i is the newest 3x3 smart cube, using Bluetooth to
+                            pair with an Android or Apple device </p><br>
+                        <p>It provides full motion tracking and stats on each solve such
+                            as turns per second, rotations, and move count</p><br>
+                        <p>Professional speed cubers have been using our Cubicle Premium puzzles
+                            and speed cubes for years, earning numerous victories at World Championships,
+                            US Nationals, European Championships, and Asian Championships. Our confidence
+                            in our build quality and our puzzles' performance make it clear why we call
+                            Cubicle Premium "The Best Cubes on Earth." </p>
+                        <div class="home-btn">
+                            <a href="https://cubestation.com/" class="btn btn-1 ">Download App</a>
+                            <div class="btn btn-1 btn-playvideo "><i class="fas fa-play"></i></div>
+                        </div>
+                    </div>
+                    <div class="row my-2 mx-3 justify-content-center align-items-center">
+                        <h2 id="clock"></h2>
+                    </div>
+                </div>
+
+                <div class="col-md-5 text-center my-4">
+                    <img src="./Image/img/gan2.png" class="home-topcircle" alt="">
+                    <div class="home-img">
+                        <div class="circle"></div>
+                        <img src="./Image/img/cube11.jpg" alt="">
+
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- End Home section -->
+
+
+
+
+    <!-- Section features -->
+    <div class="features section-padding " id="features">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="section-title">
+                        <h2>awesome <span>features</span> </h2>
+                    </div>
+                </div>
+                <!-- <div class="row"> -->
+                <div class="owl-carousel features-carousel container ">
+                    <div class="features-item">
+                        <div class="icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3> New experience</h3>
+                        <p>Intelligent capture dynamic state on screen
+                            New gameplay of speedcubing
+                        </p>
+                    </div>
+                    <div class="features-item">
+                        <div class="icon">
+                            <i class="fas fa-edit"></i>
+                        </div>
+                        <h3>Global battle </h3>
+                        <p>Match global cubers To battle anywhere
+                        </p>
+                    </div>
+                    <div class="features-item">
+                        <div class="icon">
+                            <i class="fab fa-html5"></i>
+                        </div>
+                        <h3>Big data training</h3>
+                        <p>Build a private full-dimension database
+                            Targeted skills improvement
+                        </p>
+                    </div>
+                    <div class="features-item">
+                        <div class="icon">
+                            <i class="fab fa-react"></i>
+                        </div>
+                        <h3>Friends Battle</h3>
+                        <p>Invite friends to battle
+                            More practice Quicker improvement
+                        </p>
+                    </div>
+                </div>
+                <!-- </div> -->
+            </div>
+        </div>
+    </div>
+    <!-- End section features -->
+
+
+
+
+
+
+
+    <!-- Fun fact -->
+    <div class="fun-fact section-padding " id="method">
+        <div class="container">
+            <div class="row mx-2">
+
+                <div class="col-md-8  order-md-2">
+                    <div class="section-title">
+                        <h2>CFOP Speedsolving <span>Method </span> </h2>
+                        <p> <strong> Cross , First 2 Layers, Orientation, Permutation (CFOP) </strong>
+                            is the most popular method for speedsolving the Rubik's Cube.
+                        </p>
+                        <p>It is the method used by all 3x3 world record holders in the last decade.</p>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="fun-fact-item style-1">
+                                    <h3>00</h3>
+                                    <span>Cross</span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="fun-fact-item style-2">
+                                    <h3>41</h3>
+                                    <span>F2L</span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="fun-fact-item style-2">
+                                    <h3>56</h3>
+                                    <span>OLL</span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="fun-fact-item style-1">
+                                    <h3>21</h3>
+                                    <span>PLL</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4  order-md-1 my-3 justify-content-center d-flex
+                align-items-center">
+                    <img src="./Image/img/cube1.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Fun fact -->
+
+
+    <figure>
+        <div class="fixed-wrap">
+            <div id="fixed">
+            </div>
+        </div>
+    </figure>
+
+    <!-- App screen  -->
+    <div class="appscreen section-padding " id="algorithms">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="section-title">
+                        <h2> Algo<span>rithms</span> </h2>
+                    </div>
+                </div>
+                <!-- <div class="row"> -->
+                <div class="owl-carousel app-carousel container">
+                    <div class="app-item">
+                        <a href="https://jperm.net/"><img src="./Image/img/cll.png" alt=""></a>
+                    </div>
+                    <div class="app-item">
+                        <img src="./Image/img/cp.png" alt="">
+                    </div>
+                    <div class="app-item">
+                        <img src="./Image/img/oll.png" alt="">
+                    </div>
+                    <div class="app-item">
+                        <img src="./Image/img/wr.png" alt="">
+                    </div>
+
+                </div>
+                <!-- </div> -->
+            </div>
+        </div>
+    </div>
+    <!-- End App screen -->
+
+
+
+    <!--  Download  -->
+    <div class=" download container-fluid" id="download">
+        <div class="row">
+            <div class="col-md-6 col-lg-4 download-item  ">
+                <div class="icon mb-3">
+                    <i class="fas fa-edit"></i>
+                </div>
+                <h3> <strong>Global battle </strong> </h3>
+                <p class='lead'>Match global cubers To battle anywhere</p>
+            </div>
+            <div class="col-md-6 col-lg-4 download-item  ">
+                <div class="icon mb-3">
+                    <i class="fas fa-edit"></i>
+                </div>
+                <h3> <strong>Global battle </strong> </h3>
+                <p class='lead'>Match global cubers To battle anywhere</p>
+            </div>
+            <div class="col-md-6 col-lg-4 download-item  ">
+                <div class="icon mb-3">
+                    <i class="fas fa-edit"></i>
+                </div>
+                <h3> <strong>Global battle </strong> </h3>
+                <p class='lead'>Match global cubers To battle anywhere</p>
+            </div>
+        </div>
+    </div>
+    <!-- End download -->
+    
+    <!-- <h1 class='lead'>Match global cubers To battle anywhere</h1> -->
+
+    <div class="to-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+
+
+
+    <!-- Star video popup -->
+    <div class="video-popup">
+        <div class="video-popup-inner">
+            <i class="fas fa-times video-popup-close"></i>
+            <div class="iframe-box">
+                <iframe id="box-1" src="https://www.youtube.com/embed/ez8x5JDLexU" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </div>
+    <!-- End video -->
+
+    <!-- <script src="./owl.carousel.min.js"></script> -->
+    <script src="./main.js"></script>
+    <script src="https://cdn.boomcdn.com/libs/owl-carousel/2.3.4/owl.carousel.js"></script>
+
+</body>
+
+</html>
