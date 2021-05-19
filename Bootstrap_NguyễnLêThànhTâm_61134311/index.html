@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
     <link rel="icon" href="./media/icon.png">
     <link rel="stylesheet" href="./css/main.css">
+    <!-- <script src="./js/main.js"></script> -->
 
 
 </head>
@@ -44,7 +45,7 @@
 
 
     <!-- Main menu -->
-    <nav class="navbar navbar-expand-md navbar-light bg-light section--padding" id="main-menu">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="main-menu"  id="parent">
         <div class="container-fluid">
             <div class="navbar-toggler w-100 border-0 p-0 text-center">
                 <button class="navbar-toggler float-left" data-target="#navbarResponsive1" type="button"
@@ -57,7 +58,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
             </div>
-            <div class="collapse navbar-collapse " id="navbarResponsive1">
+            <div class="collapse navbar-collapse " id="navbarResponsive1" data-parent="#parent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item"><a href="#home" class="nav-link active" data-toggle="modal"
                             data-target="#Log-in">Login</a></li>
@@ -66,8 +67,8 @@
                 </ul>
             </div>
            
-            <div class="collapse navbar-collapse" id="navbarResponsive2">
-                <ul class="navbar-nav ml-auto mr-sm-auto">
+            <div class="collapse navbar-collapse" id="navbarResponsive2" data-parent="#parent">
+                <ul class="navbar-nav ml-auto">
                     <li class="nav-item "><a href="#" class="nav-link active">Home</a></li>
                     <li class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"
@@ -145,7 +146,7 @@
                              <small class="form-message"></small>
                          </div>
                          <div class="justify-content-between">
-                             <button class="btn btn-1 " id="submit">Sign in Now</button>
+                             <button class="btn btn-success" id="submit">Sign in Now</button>
                          </div>
                      </form>
                  </div>
@@ -180,7 +181,8 @@
                              <small class="form-message"></small>
                          </div>
                          <div class="justify-content-between">
-                             <button class="btn btn-1 " id="submit">Login Now</button>
+                             <button class="btn btn-success " id="submit">Login Now</button>
+                             <button class="btn btn-warning " id="submit">Forget Password</button>
                          </div>
                      </form>
                  </div>
@@ -209,10 +211,10 @@
                             <div class="col-md-12 col-md-6 text-center">
                                 <div class="mt-3 carousel--caption">
                                     <h1>Yena</h1>
-                                    <h3>Class : <span> Warrior/Assassin</span></h3>
+                                    <h3>Role : <span> Warrior/Assassin</span></h3>
                                     <h3>Base HP : <span>2886 </span> </h3>
-                                    <h3>Armor: <span>13/17.5% </span> </h3>
-                                    <h3>Magic Defense : <span>80/11.7% </span> </h3>
+                                    <h3>Armor : <span>130/17.5% </span> </h3>
+                                    <h3>Critical Damage :  <span>150%</span> </h3>
                                     <h3>Attack Damage: : <span>170</span> </h3>
                                 </div>
                             </div>
@@ -224,10 +226,10 @@
                             <div class="col-md-12 col-md-6 text-center">
                                 <div class="mt-3 carousel--caption">
                                     <h1>Omen</h1>
-                                    <h3>Class : <span> Fighter</span></h3>
+                                    <h3>Role : <span> Warrior/Tanker</span></h3>
                                     <h3>Base HP : <span>3843 </span> </h3>
-                                    <h3>Armor: <span>100/18.5% </span> </h3>
-                                    <h3>Critical Damage:: <span>200% </span> </h3>
+                                    <h3>Armor : <span>100/18.5% </span> </h3>
+                                    <h3>Critical Damage : <span>200% </span> </h3>
                                     <h3>Attack Damage: : <span>168</span> </h3>
                                 </div>
                             </div>
@@ -239,11 +241,11 @@
                             <div class="col-md-12 col-md-6 text-center">
                                 <div class="mt-3 carousel--caption">
                                     <h1>Zuka</h1>
-                                    <h3>Class : <span> Warrior</span></h3>
+                                    <h3>Role : <span>Warrior</span></h3>
                                     <h3>Base HP : <span>3269 </span> </h3>
-                                    <h3>Armor: <span>86/12.5% </span> </h3>
-                                    <h3>Max mana: <span>0</span> </h3>
-                                    <h3>Movement speed: : <span>380</span> </h3>
+                                    <h3>Armor : <span>86/12.5% </span> </h3>
+                                    <h3>Max mana : <span>0</span> </h3>
+                                    <h3>Movement speed : <span>380</span> </h3>
                                 </div>
                             </div>
                         </div>
@@ -255,10 +257,10 @@
                             <div class="col-md-12 col-md-6 text-center">
                                 <div class=" mt-3 carousel--caption">
                                     <h1>Airi</h1>
-                                    <h3>Class : <span> Warrior/Assassin</span></h3>
+                                    <h3>Role : <span> Warrior/Assassin</span></h3>
                                     <h3>Base HP : <span>3543 </span> </h3>
-                                    <h3>Armor: <span>137/18.5% </span> </h3>
-                                    <h3>Magic Defense : <span>80/11.7% </span> </h3>
+                                    <h3>Armor : <span>137/18.5% </span> </h3>
+                                    <h3>Magic Defense : <span>80/20% </span> </h3>
                                     <h3>Attack Damage: : <span>168</span> </h3>
                                 </div>
                             </div>
@@ -369,7 +371,7 @@
 
                 <div class="col-12">
                     <hr class="copy">
-                    <h5 style="padding-top: 20px;">&copy; Nguyễn Lê Thành Tâm - 61134311 - 61.CNTT-1</h5>
+                    <p class="pt-3">&copy; Nguyễn Lê Thành Tâm - 61134311 - 61.CNTT-1</p>
                 </div>
             </div>
         </div>

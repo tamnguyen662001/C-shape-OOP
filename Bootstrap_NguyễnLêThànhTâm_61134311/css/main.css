@@ -205,9 +205,10 @@ html, body{
     letter-spacing: 3px;
 
 }
-.cart{
+/* Kiểm soát việc khi tăng kích thước ảnh, ảnh sẽ tràn ra khỏi vùng chứa */
+/* .cart{
     overflow: hidden;
-}
+} */
 .main--content img{
     transform: scale(1);
     transition: all linear 0.3s;
