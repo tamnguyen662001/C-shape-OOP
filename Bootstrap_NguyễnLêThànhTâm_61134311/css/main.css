@@ -94,12 +94,6 @@ html, body{
 .navbar-nav li{
     padding-right: 1rem;
 }
-
-.nav-link:hover,
-.nav-link.active{
-    border-bottom: .1rem solid black;
-    cursor: default;
-}
 .dropdown-menu{
     background:#f8f9fa;
     border: none;
@@ -108,7 +102,7 @@ html, body{
 }
 .dropdown-item{
     text-transform: uppercase;
-    font-size: 0.8rem !important;
+    font-size: 0.8rem;
     letter-spacing: 2px;
     transition: all linear 0.3s;
 }
@@ -131,6 +125,9 @@ html, body{
     max-height: 300px;
     opacity: 1;
 }
+.dropdown-toggle::after {
+    display: none;
+}
 
 
 
@@ -141,79 +138,73 @@ html, body{
 
 /* ==================Slide imgae ===============*/
 .carousel-inner img{
-    /* height: 600px; */
     width: 100%;
     background-size: cover;
 }
-.carousel-caption{
-    position: absolute;
-    transform: translateY(-20%);
-    top: 60%;
-}
-.carousel-caption h1{
+
+.carousel--caption h1{
     font-size: 4.5rem;
     font-weight: 800;
-    text-shadow: .1rem .1rem .1rem black;
     letter-spacing: 10px;
+    color: white;
+    text-transform: uppercase;
 }
-.carousel-caption h3{
+.carousel--caption h3{
     font-size: 1.2rem;
     padding-bottom: 5px;
     color: white;
     font-weight: 900;
 }
-.carousel-caption span{
+.carousel--caption span{
     font-size: 1.2rem;
-    color: yellow;
+    color: #ffc107;
     font-weight: 900;
 }
 
 @media only screen and (max-width : 768px){
-    .carousel-caption h1{
-        font-size: 2rem !important;
+    .carousel--caption h1{
+        font-size: 1rem !important;
         font-weight: 800;
-        text-shadow: .1rem .1rem .1rem black;
+        color: black;
+      
     }
-    .carousel-caption h3{
-        font-size: 1.5rem;
-        text-shadow: .1rem .1rem .1rem black;
-        padding-bottom: 2px;
+    .carousel--caption h3{
+        font-size: 0.8rem;
+        color: black;
+    }
+    .carousel--caption span{
+        font-size: 0.8rem;
+    }
+    .carousel-control-prev{
+        left: 0;
+        transform: translateY(-90px);
+    }
+    .carousel-control-next{
+        right: 0;
+        transform: translateY(-90px);
+    }
+    .main--content p{
+        font-size: 0.8rem;
     }
 }
 
-
-
-@media only screen and (max-width : 361px){
-    .carousel-caption h1{
-        font-size: 1rem !important;
-        font-weight: 800;
-        text-shadow: .1rem .1rem .1rem black;
-    }
-    .carousel-caption h3{
-        font-size: 0.8rem;
-    }
-    .carousel-caption{
+@media screen and (min-width:768px) {
+    .carousel--caption{
         position: absolute;
-        transform: translateY(-100%);
-        top: 50%;
+        bottom: 100px;
+        left: 38%;
+        width: 300px;
+        height: 200px;
     }
-    .carousel-caption span{
-        font-size: 0.8rem;
-    }
-} 
-
-
+}
 /* =============== Main content============== */
 .title{
     text-transform: uppercase;
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     font-weight: 900;
     letter-spacing: 3px;
 
 }
-/* .main--content img{
-    overflow: hidden;
-} */
 .cart{
     overflow: hidden;
 }

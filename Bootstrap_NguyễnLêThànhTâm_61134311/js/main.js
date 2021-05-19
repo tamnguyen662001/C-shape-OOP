@@ -1,10 +1,10 @@
 $(document).ready(function () {
-    pos = $('#x').position();
+    pos = $('#main-menu').position();
     $(window).on('scroll', function () {
         if ($(this).scrollTop() > parseInt(pos.top)) {
-            $('#x').addClass('fixed-top');
+            $('#main-menu').addClass('fixed-top');
         } else {
-            $('#x').removeClass('fixed-top');
+            $('#main-menu').removeClass('fixed-top');
         }
     });
 
