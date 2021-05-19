@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+html, body{
+    width: 100%;
+    height: 100%;
+    color: #222;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* ================== Header ================= */
+@media screen and (min-width:768px) {
+    .header--search{
+        position: absolute;
+        top: 0%;
+        right: 0%;
+        width: 300px;
+        height: 100px;
+    }
+    .header--logo{
+        position: absolute;
+        top: 0%;
+        left: 0%;
+    }
+}
+@media screen and (max-width: 767px){
+    .header--logo #logo{
+        height: 50px !important;
+        width: 125px !important;
+    }
+    .header--logo{
+        justify-content: space-between;
+        background-color: black;
+    }
+    .header--logo p{
+        letter-spacing: normal !important;
+    }
+}
+.header--logo #logo{
+    height: 50px;
+    width: 100px;
+}
+.header--logo p{
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 900;
+    text-align: center;
+    align-items: center;
+    line-height: 50px;
+    padding-left:20px;
+    letter-spacing: 2px;
+}
+.banner{
+    z-index: -1;
+    position: relative;
+}
+/* .banner img{
+    height: 300px;
+} */
+.header{
+    position: relative;
+}
+
+
+
+
+
+
+
+/*===================== Main menu==================== */
+.navbar{
+    padding: .8rem;
+}
+.navbar-brand img{
+    height: 2rem;
+}
+.nav-link{
+    text-transform: uppercase;
+    font-size: 0.8rem !important;
+    letter-spacing: 2px;
+    color: black !important;
+    font-weight: 900;
+}
+.navbar-nav li{
+    padding-right: 1rem;
+}
+
+.nav-link:hover,
+.nav-link.active{
+    border-bottom: .1rem solid black;
+    cursor: default;
+}
+.dropdown-menu{
+    background:#f8f9fa;
+    border: none;
+    max-width:100px;
+    padding: 0;
+}
+.dropdown-item{
+    text-transform: uppercase;
+    font-size: 0.8rem !important;
+    letter-spacing: 2px;
+    transition: all linear 0.3s;
+}
+.dropdown-item:hover{
+    font-weight: 600;
+    background: #fff;
+    color: black;
+    padding-left: 30px;
+    transition: all linear 0.3s;
+}
+.dropdown .dropdown-menu {
+    transition: all 1s;
+
+    max-height: 0;
+    display: block;
+    overflow:hidden;
+    opacity: 0;
+}
+.dropdown.show .dropdown-menu { 
+    max-height: 300px;
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+/* ==================Slide imgae ===============*/
+.carousel-inner img{
+    /* height: 600px; */
+    width: 100%;
+    background-size: cover;
+}
+.carousel-caption{
+    position: absolute;
+    transform: translateY(-20%);
+    top: 60%;
+}
+.carousel-caption h1{
+    font-size: 4.5rem;
+    font-weight: 800;
+    text-shadow: .1rem .1rem .1rem black;
+    letter-spacing: 10px;
+}
+.carousel-caption h3{
+    font-size: 1.2rem;
+    padding-bottom: 5px;
+    color: white;
+    font-weight: 900;
+}
+.carousel-caption span{
+    font-size: 1.2rem;
+    color: yellow;
+    font-weight: 900;
+}
+
+@media only screen and (max-width : 768px){
+    .carousel-caption h1{
+        font-size: 2rem !important;
+        font-weight: 800;
+        text-shadow: .1rem .1rem .1rem black;
+    }
+    .carousel-caption h3{
+        font-size: 1.5rem;
+        text-shadow: .1rem .1rem .1rem black;
+        padding-bottom: 2px;
+    }
+}
+
+
+
+@media only screen and (max-width : 361px){
+    .carousel-caption h1{
+        font-size: 1rem !important;
+        font-weight: 800;
+        text-shadow: .1rem .1rem .1rem black;
+    }
+    .carousel-caption h3{
+        font-size: 0.8rem;
+    }
+    .carousel-caption{
+        position: absolute;
+        transform: translateY(-100%);
+        top: 50%;
+    }
+    .carousel-caption span{
+        font-size: 0.8rem;
+    }
+} 
+
+
+/* =============== Main content============== */
+.title{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 900;
+    letter-spacing: 3px;
+
+}
+/* .main--content img{
+    overflow: hidden;
+} */
+.cart{
+    overflow: hidden;
+}
+.main--content img{
+    transform: scale(1);
+    transition: all linear 0.3s;
+}
+.main--content img:hover{
+    transform: scale(1.1);
+    transition: all linear 0.3s;
+}
+
+
+
+
+/* ====================Modal================== */
+.modal-backdrop{
+    z-index: 1;
+}
+
+
+/* ===================Footer================== */
+footer{
+    padding: 2.5rem 0 ;
+    background: #3f3f3f;
+    color: #d5d5d5;
+    font-weight: 600;
+}
+.border{
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 25%;
+    top: 10%;
+}
+.copy{
+    border-top:.1rem solid #d5d5d5 ;
+}
