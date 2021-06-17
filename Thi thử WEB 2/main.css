@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+ body{
+    /* font-size: 12pt; */
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+
+    overflow-x: hidden;
+    background-color:#fff;
+    line-height: 1.5;
+}
+*{
+    margin: 0;
+    padding: 0;
+    transition: all 0.3s;
+  }
+@media screen and (max-width: 767px){
+    .header #logo{
+        width: 100px;
+        /* height: 5px; */
+    }
+    .header--logo{
+        display: none !important;
+    }
+    .sidebar{
+        display: none !important;
+    }
+}
+@media screen and (min-width: 767px){
+    .x{
+        display: none !important;
+    }
+    #z{
+        display: none !important;
+    }
+}
+
+.navbar-toggler:not(:disabled):not(.disabled) {
+    cursor: pointer;
+    transform: translateY(4%);
+    /* color: black; */
+    background: white;
+}
+
+.header{
+    justify-content: space-between;
+}
+.header #logo{
+    height: 40px;
+}
+.header p{
+    transform: translateY(37%);
+    color: black;
+    font-weight: 900;
+    letter-spacing: 2px;
+    font-size: 1.1rem;
+}
+.nav-link{
+    text-transform: uppercase;
+    font-size: 0.8rem !important;
+    letter-spacing: 2px;
+    color: black !important;
+    font-weight: 900;
+    
+}
+#main-menu .nav-link{
+    margin-left: 30px;
+}
+
+
+.title{
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    font-weight: 900;
+    letter-spacing: 3px;
+    text-align: center;
+
+}
+
+
+
+
+
+
+/* menu dọc */
+#mainnav{
+    padding: 10px;
+    margin: 10px;
+    
+  }
+  #mainnav ul{
+      
+    background: white;
+    list-style: none;
+    padding: 0px;
+    width: 100%;
+    text-align: left;
+  }
+  #mainnav ul li{
+    position: relative;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    /* border-bottom: 1px solid black; */
+    text-align: center; 
+    background-color: #f8f9fa;
+  }
+  #mainnav ul .thefirst{
+    background: #f8f9fa;
+    pointer-events: none;
+    /* border: 1px solid black; */
+    text-decoration: underline;
+  }
+  #mainnav ul li a{
+    text-decoration: none;
+    font-weight: 900;
+    padding: 0 16px;
+    display: block;
+  }
+  #mainnav li:hover{
+    background:white;
+    padding-left: 10px;
+    transition: all linear 0.3s;
+  }
+ 
+
+
+  /* footer */
+  .footer{
+    padding: 2.5rem 0 ;
+    background: #3f3f3f;
+    color: #d5d5d5;
+    font-weight: 600;
+    align-items: center;
+}
+/* .border{
+    width:50%; 
+}*/
+.copy{
+    border-top:.1rem solid #d5d5d5 ;
+} 

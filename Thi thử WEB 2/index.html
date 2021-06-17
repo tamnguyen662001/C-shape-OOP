@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THI THỬ ĐỀ 2</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <!-- header -->
+    <div class="container">
+        <div class="row header justify-content-space-between">
+            <div class="col-6 col-md-5 header--logo py-2 d-flex ">
+                <a href="#home"><img src="./img/gan2.png" id="logo"></a>
+                <p>CUBING</p>
+            </div>
+            <div class="col-12 col-md-4">
+                <nav class="navbar navbar-expand-lg d-flex" id="main-menu">
+                    <div class="x">
+                        <div class="col-5 col-md-5 d-flex ">
+                            <a href="#home"><img src="./img/gan2.png" id="logo"></a>
+                            <p>CUBING</p>
+                        </div>
+                    </div>
+                    <div class="navbar-toggler w-0 border-0 p-0 text-center">
+                        <button class="navbar-toggler float-right" data-target="#navbarResponsive1" type="button"
+                            data-toggle="collapse">
+                            <i class="fas fa-bars"></i>
+                        </button>
+
+                    </div>
+                    <div class="collapse navbar-collapse " id="navbarResponsive1" data-parent="#parent">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item"><a href="#home" class="nav-link active" data-toggle="modal"
+                                    data-target="#Log-in">Login</a></li>
+                            <li class="nav-item"><a href="#about" class="nav-link" data-toggle="modal"
+                                    data-target="#Sign-in">Sign in</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
+        </div>
+        <!-- carousel -->
+        <div class="row justify-content-center">
+            <div class="col-md-12 mt-3">
+                <div id="slides" class="carousel slide" data-ride="carousel">
+                    <ul class="carousel-indicators">
+                        <li class="active" data-target="#slides" data-slide-to="0"></li>
+                        <li data-target="#slides" data-slide-to="1"></li>
+                        <li data-target="#slides" data-slide-to="2"></li>
+                        <li data-target="#slides" data-slide-to="3"></li>
+                    </ul>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="col-md-12">
+                                <img class="d-block w-100" src="./img/max.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-md-12">
+                                <img class="d-block w-100" src="./img/bonus2.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-md-12">
+                                <img class="d-block w-100" src="./img/bonus3.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-md-12">
+                                <img class="d-block w-100" src="./img/bonus1.jpg" alt="">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#slides" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#slides" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- main menu -->
+        <nav class="navbar navbar-expand-md navbar-light bg-light mt-2" id="x">
+          
+                <div class="navbar-toggler w-100 border-0 p-0 text-center">
+                    <button class="navbar-toggler float-left" data-target="#y" type="button" data-toggle="collapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+        
+                    <button class="navbar-toggler float-right" data-target="#z" type="button"
+                        data-toggle="collapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <!--  -->
+                <div class="collapse navbar-collapse" id="y">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item "><a href="#" class="nav-link active">Home</a></li>
+    
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"
+                                aria-haspopup="true" aria-expanded="true"> <span class="nav-label">Heros</span>
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <a href="" class="dropdown-item">Yena</a>
+                                <a href="" class="dropdown-item">Omen</a>
+                                <a href="" class="dropdown-item">Zuka</a>
+                                <a href="" class="dropdown-item">Airi</a>
+                            </ul>
+                        </li>
+    
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"
+                                aria-haspopup="true" aria-expanded="true"> <span class="nav-label">FEATURED GUIDES</span>
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <a href="" class="dropdown-item">arcana guide</a>
+                                <a href="" class="dropdown-item">TALENT GUIDE</a>
+                                <a href="" class="dropdown-item">Equipment</a>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a href="#" class="nav-link">About us</a></li>
+                    </ul>
+                </div>
+                <div class="collapse navbar-collapse" id="z">
+                    <div id="mainnav">
+                        <ul>
+                            <li class="thefirst nav-item"><a class="nav-link" href="#">Chuyen muc</a>
+                                <li class="nav-item"><a class="nav-link"href="#">Tai nguyen</a></li>
+                                <li class="nav-item"><a class="nav-link"href="#">Danh gia</a></li>
+                                <li class="nav-item"><a class="nav-link"href="#">Ma giam gia</a></li>
+                                <li class="nav-item"><a class="nav-link"href="#">Hoi dap</a></li>
+                                <li class="nav-item"><a class="nav-link"href="#">Bat dau</a></li>
+                        </ul>
+                      </div>
+                </div>
+    
+        </nav>
+        <!-- main content -->
+        <div class="row main-menu justify-content-center">
+            <div class="col-md-8 content">
+                <div class="row row1">
+                    <div class="col-md-4">
+                        <form class="p-2 ml-auto">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Enter to search">
+                                <div class="input-group-append">
+                                    <button type="submit" class="btn btn-secondary">Search</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="cart rounded-0 ">
+                            <!-- <img src="./img/nahm.jpg" alt="" class="card-img-top rounded-0"> -->
+                            <div class="card-body">
+                                <h4 class="title">Seung-Hyuk-Nahm1</h4>
+                                <p class="lead border-top pt-3">
+                                    Yena is a good Hero when fighting one by one in the lane.
+                                    She has good damage output and quite agile.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row row2 justify-content-center">
+                    <div class="col-md-6 col-8 order-md-2">
+                        <div class="cart rounded-0 ">
+                            <img src="./img/nahm.jpg" alt="" class="card-img-top rounded-0">
+                            <div class="card-body">
+                                <h4 class="title">Seung-Hyuk-Nahm3</h4>
+                                <p class="lead border-top pt-3">
+                                    Yena is a good Hero when fighting one by one in the lane.
+                                    She has good damage output and quite agile.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 order-md-1">
+                        <div class="cart rounded-0 ">
+                            <img src="./img/nahm.jpg" alt="" class="card-img-top rounded-0">
+                            <div class="card-body">
+                                <h4 class="title">Seung-Hyuk-Nahm2</h4>
+                                <p class="lead border-top pt-3">
+                                    Yena is a good Hero when fighting one by one in the lane.
+                                    She has good damage output and quite agile.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="col-md-4 sidebar">
+                <div id="mainnav">
+                    <ul>
+                      <li class="thefirst nav-item"><a class="nav-link" href="#">Chuyen muc</a>
+                      <li class="nav-item"><a class="nav-link"href="#">Tai nguyen</a></li>
+                      <li class="nav-item"><a class="nav-link"href="#">Danh gia</a></li>
+                      <li class="nav-item"><a class="nav-link"href="#">Ma giam gia</a></li>
+                      <li class="nav-item"><a class="nav-link"href="#">Hoi dap</a></li>
+                      <li class="nav-item"><a class="nav-link"href="#">Bat dau</a></li>
+                    </ul>
+                  </div>
+            </div>
+        </div>
+         <!-- footer -->
+         <div class="container-fluid">
+            <div class="row text-center footer">
+                <div class="col-md-4">
+                    <p>Contact</p>
+                    <hr class="border">
+                    <p>Gmail: tam.nlt.61.cntt@ntu.edu.vn</p>
+                    <p>Phone: 0386843039</p>
+                </div>
+                <div class="col-md-4">
+                    <p>Arena of Valor</p>
+                    <hr class="border">
+                    <p>Garena</p>
+                    <p>Tentcent Games</p>
+                </div>
+                <div class="col-md-4">
+                    <p>Infomation</p>
+                    <hr class="border">
+                    <p>Nha Trang University</p>
+                    <p>02 Nguyen Dinh Chieu, Nha Trang City</p>
+                </div>
+
+                <div class="col-12">
+                    <hr class="copy">
+                    <h5 style="padding-top: 20px;">&copy; Nguyễn Lê Thành Tâm - 61134311 - 61.CNTT-1</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+</body>
+
+</html>
